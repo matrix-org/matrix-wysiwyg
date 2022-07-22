@@ -8,8 +8,8 @@ android-x86_64:
 	# Not copying into the Android project here, since the gradle plugin
 	# actually performs this build itself.
 
-IOS_PACKAGE_DIR := ../../examples/example-ios/Packages/WysiwygComposer/
-IOS_GENERATION_DIR := ../../examples/example-ios/Generated
+IOS_PACKAGE_DIR := ../../packages/ios/WysiwygComposer/
+IOS_GENERATION_DIR := .generated/ios
 
 ios:
 	cd bindings/wysiwyg-ffi && \

@@ -45,7 +45,7 @@
 		A6472CC12886CF840021A0E8 /* WysiwygUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WysiwygUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6472CC52886CF840021A0E8 /* WysiwygUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WysiwygUITests.swift; sourceTree = "<group>"; };
 		A6472CC72886CF840021A0E8 /* WysiwygUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WysiwygUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A6E6B2712886DA6E009596F2 /* WysiwygComposer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WysiwygComposer; path = Packages/WysiwygComposer; sourceTree = "<group>"; };
+		A6E6B2712886DA6E009596F2 /* WysiwygComposer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WysiwygComposer; path = ../../packages/ios/WysiwygComposer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
