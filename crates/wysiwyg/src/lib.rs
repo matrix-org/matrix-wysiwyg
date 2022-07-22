@@ -17,6 +17,7 @@ mod composer_model;
 mod composer_update;
 mod location;
 mod menu_state;
+mod owned_dom;
 mod text_update;
 
 pub use crate::composer_action::ActionRequest;

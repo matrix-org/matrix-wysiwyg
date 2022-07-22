@@ -12,7 +12,7 @@ async function wysiwyg_run() {
 
     editor = document.getElementsByClassName('editor')[0];
     editor.addEventListener('input', editor_input);
-    editor.addEventListener("keydown", editor_keydown);
+    editor.addEventListener('keydown', editor_keydown);
 
     button_bold = document.getElementsByClassName('button_bold')[0];
     button_bold.addEventListener('click', button_bold_click);

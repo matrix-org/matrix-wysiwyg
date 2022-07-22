@@ -13,6 +13,8 @@ rust-version = "1.60"
 [features]
 
 [dependencies]
+html5ever = "0.26.0"
+mac = "0.1.1"
 
 [dev-dependencies]
 speculoos = "0.9"

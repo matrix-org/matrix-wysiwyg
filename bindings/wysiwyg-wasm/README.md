@@ -7,16 +7,21 @@ WASM/JavaScript bindings for wysiwyg-rust.
 * [Install Rust](https://www.rust-lang.org/tools/install)
 * [Install NodeJS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 * [Install wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
-* Run:
+* Run (in the top level directory):
+
+```bash
+make web
+```
+
+This effectively does:
 
 ```sh
 cd bindings/wysiwyg-wasm
 npm install
 npm run build
-#npm run test (no tests yet)
 ```
 
-This will generate:
+which generates:
 
 ```
 pkg/matrix_sdk_wysiwyg_bg.wasm
@@ -26,18 +31,13 @@ pkg/matrix_sdk_wysiwyg.js
 ... plus other files
 ```
 
-These files should be copied into a web project and imported with code like:
+and copies those files into examples/example-web/generated/
 
-```html
-<script type="module">
-import init, { some_method_from_rust }
-    from './generated/matrix_sdk_wysiwyg.js';
+To run the demo:
 
-async function run() {
-    await init();
-    some_method_from_rust();
-}
-
-run();
-</script>
+```bash
+cd examples/example-web/
+python -m http.server
 ```
+
+And navigate to http://0.0.0.0:8000/ in your web browser.
