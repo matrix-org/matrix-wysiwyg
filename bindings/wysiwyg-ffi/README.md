@@ -94,6 +94,25 @@ and includes the built library in a real Android app.
 
 ### iOS
 
+* [Install Rust](https://www.rust-lang.org/tools/install)
+
+* Configure Rust for cross compilation:
+
+```bash
+rustup target add aarch64-apple-ios
+rustup target add aarch64-apple-ios-sim
+rustup target add x86_64-apple-ios
+```
+
+* Install uniffi-bindgen
+
+⚠️  Check bindings/wysiwyg-ffi/Cargo.toml for the version of uniffi. You MUST
+use the same version here!
+
+```bash
+cargo install uniffi_bindgen --version 0.19.2
+```
+
 * Build shared object:
 
 ```bash
